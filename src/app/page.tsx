@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const authorizeSteam = () => {
-    router.replace(`${process.env.API_URL}/auth/login`);
+    router.push(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`);
   };
   return (
     <main>
