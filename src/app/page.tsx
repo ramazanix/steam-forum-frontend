@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const authorizeSteam = () => {
-    router.replace("https://ramazanix.tech/auth/login");
+    router.replace(`${process.env.API_URL}/auth/login`);
   };
   return (
     <main>
