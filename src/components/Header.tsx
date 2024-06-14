@@ -9,22 +9,22 @@ export const Header: React.FC = () => {
   const router = useRouter();
 
   const handleLogin = () => {
-    router.push(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`);
+    router.push(`http://localhost:8000/auth/login`);
   };
 
   return (
-    <header className="fixed flex w-full items-stretch gap-24 border-b-2 border-first bg-white pl-16 pr-8">
+    <header className="bg-header fixed mt-4 flex w-[95%] items-stretch gap-24 self-center rounded-[20px] bg-first pl-16 pr-8 text-white">
       <Link href="/" className="self-center">
         <LogoIcon width={80} height={80} />
       </Link>
-      <nav className="flex grow items-center gap-x-24 text-nowrap text-xl font-bold tracking-wider text-gray-700">
-        <Link href="/" className="transition-colors hover:text-second">
+      <nav className="flex grow items-center gap-x-24 text-nowrap text-xl font-bold tracking-wider">
+        <Link href="/" className="hover:text-accent transition-colors">
           My inventory
         </Link>
-        <Link href="/" className="transition-colors hover:text-second">
+        <Link href="/" className="hover:text-accent transition-colors">
           Trade
         </Link>
-        <Link href="/" className="transition-colors hover:text-second">
+        <Link href="/" className="hover:text-accent transition-colors">
           Community
         </Link>
       </nav>
@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
             <Button
               rounded="full"
               size="xl"
-              className="tracking-wider"
+              className="tracking-wider hover:-rotate-2"
               onClick={() => {
                 router.push("/profile");
               }}
@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
             <Button
               rounded="full"
               size="xl"
-              className="tracking-wider"
+              className="tracking-wider hover:-rotate-2"
               onClick={logout}
             >
               Logout

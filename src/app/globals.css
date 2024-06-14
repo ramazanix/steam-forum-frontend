@@ -3,18 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background-color: 255 255 255;
-    --first-color: 152 193 217;
-    --second-color: 105 105 179;
-    --third-color: 83 58 123;
-    --fourth-color: 75 36 74;
-    --fifth-color: 37 23 26;
-  }
-
   *::-webkit-scrollbar {
-    height: 9px;
-    width: 9px;
+    height: 4px;
+    width: 4px;
   }
 
   *::-webkit-scrollbar-track {

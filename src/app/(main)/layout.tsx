@@ -11,7 +11,7 @@ export default function MainLayout({
   return (
     <AuthProvider>
       <Header />
-      <main className="pt-20">{children}</main>
+      <main className="mt-40 px-12">{children}</main>
     </AuthProvider>
   );
 }

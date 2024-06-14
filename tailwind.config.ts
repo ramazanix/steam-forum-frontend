@@ -8,12 +8,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgb(var(--background-color))",
-        first: "rgb(var(--first-color))",
-        second: "rgb(var(--second-color))",
-        third: "rgb(var(--third-color))",
-        fourth: "rgb(var(--fourth-color))",
-        fifth: "rgb(var(--fifth-color))",
+        background: "#ECF0F1",
+        header: "#2C3E50",
+        text_dark: "#FFFFFF",
+        button: "#1ABC9C",
+        accent: "#E67E22",
+        shadow: "#BDC3C7",
       },
     },
   },

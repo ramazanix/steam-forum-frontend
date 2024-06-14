@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { twJoin } from "tailwind-merge";
 
 const roboto = Roboto({ weight: "500", subsets: ["cyrillic", "latin"] });
 
@@ -16,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body
+        className={twJoin(
+          roboto.className,
+          "flex w-full flex-col bg-background",
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
