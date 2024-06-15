@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <p>
+    <p className="text-justify">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quod! Ea
       dolore cupiditate recusandae. Laudantium libero sequi ea veritatis officia
       atque sed asperiores voluptas eveniet. Architecto accusantium veniam fuga
