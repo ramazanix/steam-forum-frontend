@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   const router = useRouter();
 
   const handleLogin = () => {
-    router.push(`http://localhost:8000/auth/login`);
+    router.push(`${NEXT_PUBLIC_API_URL}/auth/login`);
   };
 
   return (
