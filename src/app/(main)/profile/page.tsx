@@ -30,17 +30,19 @@ export default function Profile() {
             height={150}
             className="shadow-shadow content-center rounded text-center shadow-md"
           />
-          <h2 className="text-center">{user.personaname}</h2>
-          <div className="border-accent grid grid-cols-2 grid-rows-3 rounded-md border-2">
-            <p className="border-accent border-r-2 p-2 text-center">Steam ID</p>
+          <h2 className="text-center text-xl font-semibold">
+            {user.personaname}
+          </h2>
+          <div className="border-header grid grid-cols-2 grid-rows-3 rounded-md border-2">
+            <p className="border-header border-r-2 p-2 text-center">Steam ID</p>
             <p className="p-2 text-start">{user.steamid}</p>
-            <p className="border-accent border-y-2 border-r-2 p-2 text-center">
+            <p className="border-header border-y-2 border-r-2 p-2 text-center">
               Registered
             </p>
-            <p className="border-accent border-y-2 p-2 text-start">
+            <p className="border-header border-y-2 p-2 text-start">
               {userCreated}
             </p>
-            <p className="border-accent border-r-2 p-2 text-center">
+            <p className="border-header border-r-2 p-2 text-center">
               Last login
             </p>
             <p className="p-2 text-start">{userLogoff}</p>

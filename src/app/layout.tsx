@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={twJoin(
           roboto.className,
-          "flex w-full flex-col bg-background",
+          "bg-sprinkle flex w-full flex-col bg-background",
         )}
       >
         {children}

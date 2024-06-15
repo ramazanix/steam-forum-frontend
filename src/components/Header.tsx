@@ -13,18 +13,18 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-header fixed mt-4 flex w-[95%] items-stretch gap-24 self-center rounded-[20px] bg-first pl-16 pr-8 text-white">
+    <header className="bg-header/80 fixed mt-4 flex w-[95%] items-stretch gap-24 self-center rounded-[20px] bg-first pl-16 pr-8 text-white backdrop-blur-sm">
       <Link href="/" className="self-center">
         <LogoIcon width={80} height={80} />
       </Link>
       <nav className="flex grow items-center gap-x-24 text-nowrap text-xl font-bold tracking-wider">
-        <Link href="/" className="hover:text-accent transition-colors">
+        <Link href="/" className="hover:text-accent_2 transition-colors">
           My inventory
         </Link>
-        <Link href="/" className="hover:text-accent transition-colors">
+        <Link href="/" className="hover:text-accent_2 transition-colors">
           Trade
         </Link>
-        <Link href="/" className="hover:text-accent transition-colors">
+        <Link href="/" className="hover:text-accent_2 transition-colors">
           Community
         </Link>
       </nav>
