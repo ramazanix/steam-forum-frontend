@@ -15,6 +15,7 @@ const config: Config = {
         accent_1: "#E67E22",
         accent_2: "#1ABC9C",
         shadow: "#BDC3C7",
+        inventory: "#526271",
       },
       backgroundImage: {
         sprinkle: "url(/Sprinkle.svg)",

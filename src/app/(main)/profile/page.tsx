@@ -4,6 +4,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { unixTimeStampToDate } from "@/utils";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
 export default function Profile() {
   const { user } = useAuth();
   const [userCreated, setUserCreated] = useState<string>("");

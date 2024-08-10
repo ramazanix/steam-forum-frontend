@@ -18,7 +18,10 @@ export const Header: React.FC = () => {
         <LogoIcon width={80} height={80} />
       </Link>
       <nav className="flex grow items-center gap-x-24 text-nowrap text-xl font-bold tracking-wider">
-        <Link href="/" className="transition-colors hover:text-accent_2">
+        <Link
+          href="/inventory"
+          className="transition-colors hover:text-accent_2"
+        >
           My inventory
         </Link>
         <Link href="/" className="transition-colors hover:text-accent_2">
