@@ -15,8 +15,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const token = localStorage.getItem("accessToken");
 
     if (token) {
-      const decodedUser = parseJwt(token);
-      setUser(decodedUser);
+      const decodedToken = parseJwt(token);
+      setUser(decodedToken.sub);
     }
   }, []);
 

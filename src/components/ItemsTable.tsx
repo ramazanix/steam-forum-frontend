@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge";
+import { twJoin, twMerge } from "tailwind-merge";
 
 type Props = {
   children: React.ReactNode;
@@ -7,13 +7,13 @@ type Props = {
 
 export const ItemsTable: React.FC<Props> = ({ className, children }) => {
   return (
-    <div className="mb-8 overflow-hidden rounded-3xl bg-inventory">
-      <div
-        className={twJoin(
-          "grid max-h-[80dvh] grid-cols-10 justify-items-center gap-3 overflow-y-auto p-10",
-          className,
-        )}
-      >
+    <div
+      className={twMerge(
+        "mb-8 overflow-hidden rounded-3xl bg-inventory",
+        className,
+      )}
+    >
+      <div className="mb-5 grid h-[80dvh] grid-cols-8 content-start justify-items-center gap-3 overflow-y-auto p-10">
         {children}
       </div>
     </div>
